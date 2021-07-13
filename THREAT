@@ -1,0 +1,65 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat6.js'], function(APIConstructor, stiatExtension){
+	
+	var API = new APIConstructor();
+		  return stiatExtension({
+		  category : { 
+		    name : 'Self', //Will appear in the data.
+		    title : {
+		      media : {word : 'Self'}, //Name of the category presented in the task.
+		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+		      height : 7 //Used to position the "Or" in the combined block.
+		    }, 
+		    media : [ //Stimuli 
+    		    	{image : 'black1.jpg'}, 
+    			{word : 'I'}, 
+    			{word : 'I'm'}, 
+    			{word : 'Me'}, 
+    			{word : 'Mine'}, 
+    			{word : 'Myself'}
+		    ], 
+		    //Stimulus css (style)
+		    css : {color:'#31b404','font-size':'3em'}
+		  },	
+
+  		attribute1 : 
+			{
+			name : 'Threat', //Attribute label
+			title : {
+				media : {word : 'Threat'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Afraid'},
+				{word: 'Distressed'},
+				{word: 'Nervous'},
+				{word: 'Scared'},
+				{word: 'Uneasy'},
+				
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+		attribute2 : 
+			{
+			name : 'Security', //Attribute label
+			title : {
+				media : {word : 'Security'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Confident'},
+				{word: 'Determined'},
+				{word: 'Good'},
+				{word: 'Proud'},
+				{word: 'Strong'},
+		
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+
+  }}
+  );
+  });
